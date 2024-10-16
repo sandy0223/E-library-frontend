@@ -14,7 +14,15 @@ const Login = () => {
       .then(result => {
         console.log(result);
         if(result.data.message === 'Login successful'){
-          navigate('/home');
+          localStorage.setItem('data', result.data);
+          localStorage.setItem('message', result.data.message);
+        localStorage.setItem('user', JSON.stringify({
+          name: result.data.user.username,         // Assuming 'name' comes from the backend
+          email: result.data.user.email,       // Assuming 'email' comes from the backend
+        }));
+        navigate('/home');
+          location.reload()
+          
         }else{
           alert('Invalid credentials');
         }

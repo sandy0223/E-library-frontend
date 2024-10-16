@@ -13,6 +13,11 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Novel from '../Pages/Novel'
 import SignUp from '../Pages/SignUp';
+import Profile from '../Pages/Profile';
+import BorrowBook from '../Pages/BorrowBook';
+import AdminBorrowersList from '../Pages/Admin/AdminBorrowersList';
+import AdminLogin from '../Pages/Admin/AdminLogin';
+import LibraryApp from '../Pages/LibraryApp';
 
 const AppRoutes = () => {
   return (
@@ -24,13 +29,18 @@ const AppRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/my-library" element={<MyLibrary />} />
+        <Route path="/library" element={<LibraryApp />} />
         <Route path="/e-journals" element={<EJournals />} />
         <Route path="/magazines" element={<Magazines />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/novel" element={<Novel/>} />
+        <Route path="/novels" element={<Novel/>} />
         <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<AdminLogin/>}/>
+        <Route path="/borrow" element={<BorrowBook />} />
+        <Route path="/admin/borrowers" element={<AdminBorrowersList />} />
         <Route path="/Signup" element={<SignUp />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer/>
