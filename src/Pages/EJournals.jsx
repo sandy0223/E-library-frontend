@@ -192,7 +192,7 @@ const EJournals = () => {
   };
 
   return (
-    <div className="p-6 bg-gradient-to-br w-full h-full mt-6 from-blue-500 to-indigo-600 text-white">
+    <div className="p-6 w-full h-full mt-6 bg-gradient-to-r from-purple-500 to-blue-500 text-white">
       <h2 className="text-3xl font-bold text-center mb-8">E-Journals</h2>
       <div className="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-5 gap-4">
         {journals.map((journal) => (

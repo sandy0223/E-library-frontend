@@ -6,7 +6,7 @@ const novelsData = [
     title: "Mystery of the Lost Island",
     author: "John Doe",
     image: "/images/mystery-novel.jpg",
-    price: "$20",
+    link: "$20",
     description: "An intriguing mystery about an island that holds many secrets.",
   },
   {
@@ -14,7 +14,7 @@ const novelsData = [
     title: "The Last Adventure",
     author: "Jane Smith",
     image: "/images/adventure-novel.jpg",
-    price: "$18",
+    link: "$18",
     description: "A thrilling tale of exploration and the spirit of adventure.",
   },
   {
@@ -22,7 +22,55 @@ const novelsData = [
     title: "Chronicles of the Forgotten Realm",
     author: "Maxwell King",
     image: "/images/fantasy-novel.jpg",
-    price: "$22",
+    link: "$22",
+    description: "A fantasy epic filled with magic, heroism, and dark forces.",
+  },
+  {
+    id: 3,
+    title: "Chronicles of the Forgotten Realm",
+    author: "Maxwell King",
+    image: "/images/fantasy-novel.jpg",
+    link: "$22",
+    description: "A fantasy epic filled with magic, heroism, and dark forces.",
+  },
+  {
+    id: 3,
+    title: "Chronicles of the Forgotten Realm",
+    author: "Maxwell King",
+    image: "/images/fantasy-novel.jpg",
+    link: "$22",
+    description: "A fantasy epic filled with magic, heroism, and dark forces.",
+  },
+  {
+    id: 3,
+    title: "Chronicles of the Forgotten Realm",
+    author: "Maxwell King",
+    image: "/images/fantasy-novel.jpg",
+    link: "$22",
+    description: "A fantasy epic filled with magic, heroism, and dark forces.",
+  },
+  {
+    id: 3,
+    title: "Chronicles of the Forgotten Realm",
+    author: "Maxwell King",
+    image: "/images/fantasy-novel.jpg",
+    link: "$22",
+    description: "A fantasy epic filled with magic, heroism, and dark forces.",
+  },
+  {
+    id: 3,
+    title: "Chronicles of the Forgotten Realm",
+    author: "Maxwell King",
+    image: "/images/fantasy-novel.jpg",
+    link: "$22",
+    description: "A fantasy epic filled with magic, heroism, and dark forces.",
+  },
+  {
+    id: 3,
+    title: "Chronicles of the Forgotten Realm",
+    author: "Maxwell King",
+    image: "/images/fantasy-novel.jpg",
+    link: "$22",
     description: "A fantasy epic filled with magic, heroism, and dark forces.",
   },
 ];
@@ -53,9 +101,9 @@ const Novel = () => {
   };
 
   return (
-    <div className="p-8 bg-gray-100">
-      <h1 className="text-4xl font-bold mb-8 text-center">Novels Collection</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="p-8 bg-gradient-to-r from-purple-500 to-blue-500">
+      {/* <h1 className="text-4xl font-bold mb-8 text-center">Novels Collection</h1> */}
+      <div className="grid grid-cols-1 mt-28 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {novelsData.map((novel) => (
           <div key={novel.id} className="bg-white p-6 rounded-lg shadow-lg">
             <img
@@ -64,11 +112,10 @@ const Novel = () => {
               className="w-full h-64 object-cover mb-4"
             />
             <h3 className="text-xl font-semibold mb-2">{novel.title}</h3>
-            <p className="text-gray-600 mb-1">by {novel.author}</p>
-            <p className="text-gray-700 mb-4">{novel.description}</p>
-            <p className="text-gray-900 font-bold mb-4">{novel.price}</p>
+           
+            
             <button className="mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg">
-              Buy Now
+              <a href={novel.link}>Download / View</a>
             </button>
             <button
               className="mt-4 ml-4 px-4 py-2 bg-green-600 text-white rounded-lg"

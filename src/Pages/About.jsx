@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-200 to-purple-200 text-gray-800 min-h-screen flex items-center justify-center">
-      <div className="container mx-auto p-8">
+    <section className="bg-gradient-to-r from-purple-500 to-blue-500 text-gray-800 min-h-screen mt-20 flex items-center justify-center">
+      <div className="container w-1/2 mx-auto p-8">
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="px-8 py-6 text-center">
             <h1 className="text-4xl font-bold text-purple-600 hover:text-purple-800 transition duration-300">

@@ -1,18 +1,28 @@
 import React, { useState } from "react";
 import Novel from "./Novel";
 import MyLibrary from "./MyLibrary";
+import Magazines from "./Magazines"; // Import Magazines component
 
 const LibraryApp = () => {
   const [favoriteBooks, setFavoriteBooks] = useState([]);
+  const [favoriteMagazines, setFavoriteMagazines] = useState([]); // State for favorite magazines
 
-  const handleFavoriteUpdate = (updatedFavorites) => {
+  // Update favorite novels
+  const handleFavoriteBooksUpdate = (updatedFavorites) => {
     setFavoriteBooks(updatedFavorites);
+  };
+
+  // Update favorite magazines
+  const handleFavoriteMagazinesUpdate = (updatedFavorites) => {
+    setFavoriteMagazines(updatedFavorites);
   };
 
   return (
     <div>
-      <Novel onFavorite={handleFavoriteUpdate} />
-      <MyLibrary favoriteBooks={favoriteBooks} />
+      {/* Pass the update function to Novel and Magazines */}
+      <Novel onFavorite={handleFavoriteBooksUpdate} />
+      <Magazines onFavorite={handleFavoriteMagazinesUpdate} />
+      <MyLibrary favoriteBooks={favoriteBooks} favoriteMagazines={favoriteMagazines} />
     </div>
   );
 };

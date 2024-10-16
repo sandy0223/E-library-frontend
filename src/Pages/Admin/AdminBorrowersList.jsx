@@ -25,15 +25,15 @@ const AdminBorrowersList = () => {
   };
 
   return (
-    <div className="p-8 bg-gray-100 max-w-4xl mx-auto rounded-lg h-screen shadow-md">
-      <h2 className="text-3xl font-semibold mb-6 text-center">Borrowers List</h2>
+    <div className="p-8  mx-auto rounded-lg h-screen shadow-md">
+      {/* <h2 className="text-3xl font-semibold mb-6 text-center">Borrowers List</h2> */}
 
       {borrowers.length === 0 ? (
        <div className="flex items-center h-screen justify-center">
          <p className="text-center text-lg">No one has borrowed a book yet.</p>
        </div>
       ) : (
-        <table className="w-full table-auto bg-white shadow-md rounded-lg">
+        <table className="w-full mt-32 table-auto bg-white shadow-md rounded-lg">
           <thead>
             <tr className="bg-gray-200 text-left">
               <th className="px-4 py-2">Name</th>

@@ -18,6 +18,7 @@ import BorrowBook from '../Pages/BorrowBook';
 import AdminBorrowersList from '../Pages/Admin/AdminBorrowersList';
 import AdminLogin from '../Pages/Admin/AdminLogin';
 import LibraryApp from '../Pages/LibraryApp';
+import FAQ from '../Pages/Faq';
 
 const AppRoutes = () => {
   return (
@@ -36,6 +37,7 @@ const AppRoutes = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/novels" element={<Novel/>} />
         <Route path="/login" element={<Login />} />
+        <Route path="/Faq" element={<FAQ />} />
         <Route path="/admin" element={<AdminLogin/>}/>
         <Route path="/borrow" element={<BorrowBook />} />
         <Route path="/admin/borrowers" element={<AdminBorrowersList />} />

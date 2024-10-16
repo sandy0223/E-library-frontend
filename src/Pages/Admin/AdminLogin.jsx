@@ -14,24 +14,28 @@ const AdminLogin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Hardcoded credentials for demonstration purposes
+    // demonstration purposes
     const adminUsername = "admin";
     const adminPassword = "admin123";
 
     if (credentials.username === adminUsername && credentials.password === adminPassword) {
-      // Set a flag to indicate admin is logged in (you can use a token for real-world apps)
       localStorage.setItem("isAdmin", true);
       navigate("/admin/borrowers");
+      alert("Welcome Admin");
     } else {
       setError("Invalid username or password");
+      alert("Invalid login attempt")
     }
   };
 
   return (
-    <div className="p-8 bg-gray-100 max-w-md mx-auto rounded-lg h-screen shadow-md">
-      <h2 className="text-2xl font-semibold mb-6 text-center">Admin Login</h2>
+    <div className="p-8 bg-gradient-to-b from-purple-600 to-slate-200 mx-auto rounded-lg h-screen">
       {error && <p className="text-red-500 text-center mb-4">{error}</p>}
-      <form onSubmit={handleSubmit} className="space-y-4">
+       <div className="flex items-center justify-center h-screen">
+       <form onSubmit={handleSubmit} className="space-y-4 w-96 p-4 rounded-xl shadow-lg bg-slate-100 h-96 border-emerald-400 border-4 ">
+        <div className="flex justify-center">
+          <h1><img className="w-24" src="/images/ELogo.png" alt="" /></h1>
+        </div>
         <div>
           <label className="block text-lg font-medium">Username</label>
           <input
@@ -61,6 +65,7 @@ const AdminLogin = () => {
           Login
         </button>
       </form>
+       </div>
     </div>
   );
 };
