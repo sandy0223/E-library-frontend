@@ -28,7 +28,21 @@ const Footer = () => {
         </div>
         <div className="text-9xl text-white mb-4 mt-4 Orbitron shadow-inner shadow-white  p-4"><span className='text-yellow-300'>LEARN</span>TEL</div>
       </div>
-
+<div className="flex justify-between w-full">
+<span className='text-white'> <details><summary>&copy; Copyrighted by</summary>
+  <p>Sandeep Behera</p>
+  <p>Shubhadeep Roy</p>
+  <p>Sushil Ku. Das</p>
+  <p>Partha Sarathi Ratha</p>
+  <p>Rajeev Mishra</p>
+  </details></span>
+  <span className='text-white'> 2024-Onwards</span>
+  <span className='text-white'> <details><summary>Special Thanks for Contributing</summary>
+  <p>Sasmita Ojha (Designing)</p>
+  <p>Sahil Khan (Backend)</p>
+  
+  </details></span>
+</div>
     </footer>
   );
 };
