@@ -137,7 +137,7 @@ const EJournals = () => {
       image: 'https://m.media-amazon.com/images/I/81l3rZK4lnL._AC_UY327_FMwebp_QL65_.jpg',
       price: '$17',
       rentalPrice: '$9',
-      link: 'https://docs.google.com/viewerng/viewer?url=https://www.onalza.com/wp-content/uploads/2018/03/Ikigai.pdf&embedded=true&rm=minimal',
+      link: '/book/Ikigai.pdf',
     },
     {
       id: 16,
@@ -224,13 +224,14 @@ const EJournals = () => {
           <div className="bg-white p-6 rounded-lg max-w-lg h-[75%] w-full">
             <h3 className="text-2xl text-black bg-white font-bold mb-4">{selectedJournal.title}</h3>
            <div className="flex justify-center items-center">
-           <img src={selectedJournal.image} alt="book image" />
+           <img src={selectedJournal.image} alt="book image" className='w-52' />
            </div>
           
             {/* <p className='text-black'>{selectedJournal.genre}</p> */}
             <div className="mt-4">
               <a
                 href={selectedJournal.link}
+                target='_blank'
                 className="block bg-gradient-to-r from-purple-400 to-pink-500 text-white px-4 py-2 rounded-md text-center hover:from-purple-500 hover:to-pink-600 transition-all"
               >
                 Start Reading
