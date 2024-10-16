@@ -53,12 +53,12 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gradient-to-t from-purple-700 to-slate-900 shadow-lg font-mono fixed top-0 left-0 w-screen">
+    <header className="bg-gradient-to-t z-30 from-purple-600 to-slate-900 shadow-lg font-mono fixed top-0 left-0 w-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex-shrink-0">
             <img className='w-[85px] absolute top-2 left-10' src="/images/ELogo.png" alt="logo" />
-            <span className='absolute top-8 text-2xl font-bold font-sans left-[8%] text-white'>LEARNTEL</span>
+            <span className='absolute top-8 text-2xl font-bold md:visible hidden  font-sans left-[8%] text-white'>LEARNTEL</span>
           </div>
           <div className="hidden md:flex space-x-8 items-center">
             <Link to="/" className="text-white hover:text-gray-300">Home</Link>

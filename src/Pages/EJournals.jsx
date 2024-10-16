@@ -203,7 +203,7 @@ const EJournals = () => {
             <img
               src={journal.image}
               alt={journal.title}
-              className=" object-contain w-full h-[40%] rounded-t-lg"
+              className=" object-contain w-full h-[40%] hover:scale-110 duration-300 transition-all rounded-t-lg"
             />
             <h3 className="text-xl font-semibold mt-4">{journal.title}</h3>
             <p className="text-sm mt-2">{journal.genre}</p>

@@ -1,38 +1,42 @@
-// src/pages/About.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6 mt-16">
-      <div className="bg-white shadow-md p-8 rounded-lg max-w-4xl w-full">
-        <h1 className="text-4xl font-bold text-center mb-6">About Us</h1>
-        <p className="text-lg text-gray-700 leading-relaxed mb-4">
-          Welcome to <span className="font-semibold">E-Library</span>, your gateway to a world of knowledge. We provide
-          access to a wide range of digital resources, including e-books, academic papers, journals, and multimedia
-          content. Whether you're a student, researcher, or faculty member, our mission is to offer a seamless and
-          comprehensive platform for all your learning and research needs.
-        </p>
-        <h2 className="text-2xl font-semibold mt-6 mb-4">Our Vision</h2>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          Our vision is to create a world where education is accessible to everyone, regardless of location or
-          background. We believe that digital resources play a critical role in shaping the future of learning. At
-          E-Library, we are dedicated to providing an inclusive and user-friendly platform that empowers learners to
-          explore, discover, and succeed.
-        </p>
-        <h2 className="text-2xl font-semibold mt-6 mb-4">Why Choose Us?</h2>
-        <ul className="list-disc list-inside text-lg text-gray-700 leading-relaxed">
-          <li>Extensive collection of digital resources in various formats (PDF, EPUB, MP3, MP4).</li>
-          <li>Easy-to-use platform with intuitive navigation.</li>
-          <li>Secure user authentication to protect your account and personal data.</li>
-          <li>Cross-device compatibility, allowing access on your desktop, tablet, or smartphone.</li>
-          <li>Constant updates to ensure our collection remains relevant and up-to-date.</li>
-        </ul>
-        <h2 className="text-2xl font-semibold mt-6 mb-4">Contact Us</h2>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          Have questions or feedback? We’d love to hear from you. Feel free to <a href="/contact" className="text-blue-500 hover:underline">contact us</a> and we’ll get back to you as soon as possible.
-        </p>
+    <section className="bg-gradient-to-r from-blue-200 to-purple-200 text-gray-800 min-h-screen flex items-center justify-center">
+      <div className="container mx-auto p-8">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="px-8 py-6 text-center">
+            <h1 className="text-4xl font-bold text-purple-600 hover:text-purple-800 transition duration-300">
+              About Our E-Library
+            </h1>
+            <p className="mt-4 text-lg text-gray-600 hover:text-gray-800 transition duration-300">
+              Welcome to our E-Library, a platform designed for all book lovers! Our library offers a vast collection of books in various genres, providing a seamless experience for readers across the globe.
+            </p>
+            <p className="mt-4 text-lg text-gray-600 hover:text-gray-800 transition duration-300">
+              Whether you're looking to immerse yourself in fiction, explore non-fiction, or dive into academic resources, we have something for everyone. Our online book reading feature allows you to enjoy your favorite books from the comfort of your home.
+            </p>
+            <p className="mt-4 text-lg text-gray-600 hover:text-gray-800 transition duration-300">
+              Our "Borrow" option is designed to make book borrowing easier than ever, allowing you to manage your personal library and keep track of your reading habits. Join us to discover a new way of reading and learning with our digital resources.
+            </p>
+            <p className="mt-4 text-lg text-gray-600 hover:text-gray-800 transition duration-300">
+              At our E-Library, we believe in making reading accessible to everyone. Our user-friendly interface ensures a smooth experience, whether you're browsing, reading, or borrowing a book. Sign up today and explore our extensive collection!
+            </p>
+
+            <div className="mt-8 flex justify-center">
+              <Link to="/" className="px-6 py-3 bg-purple-500 text-white rounded-lg shadow-lg hover:bg-purple-700 transition duration-300 transform hover:scale-105">
+                Explore
+              </Link>
+            </div>
+          </div>
+          <div className="bg-gradient-to-r from-purple-500 to-blue-500 p-4">
+            <p className="text-white text-center text-sm">
+              Embark on your reading journey with us, where stories come alive, and knowledge is just a click away. Explore our E-Library today!
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
