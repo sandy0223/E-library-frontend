@@ -16,22 +16,21 @@ const magazinesData = {
     { id: 9, title: "Zero trust architecture", img: "https://m.media-amazon.com/images/I/41cniQIzYpL.jpg", releaseDate: "2024-12-05", link: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf" },
     { id: 10, title: "Forbes More than just Rocking The Pulpit", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVokwY7NB7P4aPHxsbCx_skdubGzUG1nMNZg&s", releaseDate: "2024-12-05", link: "https://cms.forbesafrica.com/wp-content/uploads/2022/01/forbes-mag-1.pdf" },
     { id: 11, title: "Caravan", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvA5dFzelkFSeg1dId9LSLKDkutB64WZPYCA&s", releaseDate: "2024-12-05", link: "https://orientblackswan.com/DigitalSpecimen/content/caravan/Presentation.pdf" },
-    { id: 12, title: "Global Trends", img: "global-trends.jpg", releaseDate: "2024-12-05", link: "https://frontline.thehindu.com/magazine/article31250804.ece/binary/FL-10-04-2020-EBOOK.pdf" },
+    { id: 12, title: "Cricket", img: "/book/cricket.jpg", releaseDate: "2024-12-05", link: "http://www.cricketamerica.com/pdf/Cricket.pdf" },
   ],
   anime: [
-    { id: 13, title: "Anime Art", img: "anime-art.jpg", link: "$15" },
-    { id: 14, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
-    { id: 15, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
-    { id: 16, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
-    { id: 17, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
-    { id: 18, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
+    { id: 13, title: "Jujutsu Kaisen", img: "/book/jjk.jpg", link: "https://fliphtml5.com/cphge/dlst/jjk/" },
+    { id: 14, title: "Bleach: Spirits are always with you", img: "/book/bleach.jpg", link: "https://fliphtml5.com/vpvqv/yhlv/Bleach-Spirits-Are-Forever-with-You_1/" },
+    { id: 15, title: "Solo Leveling Vol.1", img: "/book/sl.jpg", link: "https://fliphtml5.com/azhta/zbjs/Solo_Leveling_Vol_1_By_Chugong-pdfread.net/" },
+    { id: 16, title: "Naruto Vol.72", img: "/book/naruto.jpg", link: "https://fliphtml5.com/idufm/aioj/NV72_S_-_Naruto_Uzumaki%21/" },
+    { id: 17, title: "My Hero Academia", img: "/book/mha.jpg", link: "https://fliphtml5.com/xaieb/yzpd/my_hero_academia_vol.1/" },
+    { id: 18, title: "blackclover", img: "/book/blackclover.jpg", link: "https://fliphtml5.com/xejxd/tswc/magazine_black_clover/" },
   ],
 };
 
 const Magazines = () => {
   const [favorites, setFavorites] = useState([]);
 
-  // Load favorites from localStorage when the component mounts
   useEffect(() => {
     const storedFavorites = JSON.parse(localStorage.getItem("favoriteMagazines")) || [];
     setFavorites(storedFavorites);
@@ -42,10 +41,8 @@ const Magazines = () => {
     let updatedFavorites;
 
     if (isFavorite) {
-      // Remove from favorites
       updatedFavorites = favorites.filter((fav) => fav.id !== magazine.id);
     } else {
-      // Add to favorites
       updatedFavorites = [...favorites, magazine];
     }
 
