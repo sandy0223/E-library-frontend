@@ -5,26 +5,26 @@ const magazinesData = {
   latest: [
     { id: 1, title: "Tech Today", img: "https://media.zinnov.com/wp-content/uploads/2024/01/technology-trends-2024-report-infographic-v3-653x1024.png", link: "https://futuretodayinstitute.com/wp-content/uploads/2024/03/TR2024_Full-Report_FINAL_LINKED.pdf" },
     { id: 2, title: "AI modern approach third edition", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiD49JidfWX11QJdELxShtictRIyGr37OSgA&s", link: "https://people.engr.tamu.edu/guni/csce421/files/AI_Russell_Norvig.pdf" },
-    { id: 2, title: "Science World", img: "science-world.jpg", link: "$12" },
-    { id: 2, title: "Science World", img: "science-world.jpg", link: "$12" },
-    { id: 2, title: "Science World", img: "science-world.jpg", link: "$12" },
-    { id: 2, title: "Science World", img: "science-world.jpg", link: "$12" },
+    { id: 3, title: "Oceanology", img: "https://seatracker.ru/i/p/de/e8/dee89de94f0388a0af1adb1829dc8a9f.jpg", link: "https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/docs/20231128-exploring-ocean-mysteries-handout.pdf" },
+    { id: 4, title: "Breakthrough innovation and growth", img: "https://image.slidesharecdn.com/pwc-informe-innovacion-2013-131004070702-phpapp01/85/Informe-PwC-Encuesta-Mundial-de-Innovacion-2013-1-320.jpg", link: "https://www.pwc.es/es/publicaciones/gestion-empresarial/assets/breakthrough-innovation-growth.pdf" },
+    { id: 5, title: "Quantum Computing", img: "https://m.media-amazon.com/images/I/51onF0g+9sL._SY342_.jpg", link: "https://www.fi.muni.cz/usr/gruska/qbook1.pdf" },
+    { id: 6, title: "The Next Generation Of Renewable Energy", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRIobTBZP9T3h1hfAe5wt8oMzUp6-T64V1-khxtec-Lub3jD05zXNi-Lp113z6BR6VJPA&usqp=CAU", link: "https://unece.org/fileadmin/DAM/energy/se/pdfs/gere/Menu.EffEcon.Tech.Policies/Menu.Efficient.Economic.Technologies_Policies.UNECE.Region.pdf" },
   ],
   upcoming: [
-    { id: 3, title: "Future Innovations", img: "future-innovations.jpg", releaseDate: "2024-11-15" },
-    { id: 4, title: "Global Trends", img: "global-trends.jpg", releaseDate: "2024-12-05" },
-    { id: 4, title: "Global Trends", img: "global-trends.jpg", releaseDate: "2024-12-05" },
-    { id: 4, title: "Global Trends", img: "global-trends.jpg", releaseDate: "2024-12-05" },
-    { id: 4, title: "Global Trends", img: "global-trends.jpg", releaseDate: "2024-12-05" },
-    { id: 4, title: "Global Trends", img: "global-trends.jpg", releaseDate: "2024-12-05" },
+    { id: 7, title: "Entrepreneurs 2024", img: "/book/en.jpg", releaseDate: "2024-11-15", link: "https://publuu.com/flip-book/394016/903346/page" },
+    { id: 8, title: "Femina Magazine jacqueline", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9X8kbJ28pLTKnEa39kjU4hkAld1Sjps87yQ&s", releaseDate: "2024-12-05", link: "https://femina.wwmindia.com/magazines/2021/february/Femina_Pune_Feb_2021.pdf" },
+    { id: 9, title: "Zero trust architecture", img: "https://m.media-amazon.com/images/I/41cniQIzYpL.jpg", releaseDate: "2024-12-05", link: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf" },
+    { id: 10, title: "Forbes More than just Rocking The Pulpit", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVokwY7NB7P4aPHxsbCx_skdubGzUG1nMNZg&s", releaseDate: "2024-12-05", link: "https://cms.forbesafrica.com/wp-content/uploads/2022/01/forbes-mag-1.pdf" },
+    { id: 11, title: "Caravan", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvA5dFzelkFSeg1dId9LSLKDkutB64WZPYCA&s", releaseDate: "2024-12-05", link: "https://orientblackswan.com/DigitalSpecimen/content/caravan/Presentation.pdf" },
+    { id: 12, title: "Global Trends", img: "global-trends.jpg", releaseDate: "2024-12-05", link: "https://frontline.thehindu.com/magazine/article31250804.ece/binary/FL-10-04-2020-EBOOK.pdf" },
   ],
   anime: [
-    { id: 5, title: "Anime Art", img: "anime-art.jpg", link: "$15" },
-    { id: 6, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
-    { id: 6, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
-    { id: 6, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
-    { id: 6, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
-    { id: 6, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
+    { id: 13, title: "Anime Art", img: "anime-art.jpg", link: "$15" },
+    { id: 14, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
+    { id: 15, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
+    { id: 16, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
+    { id: 17, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
+    { id: 18, title: "Manga Universe", img: "manga-universe.jpg", link: "$18" },
   ],
 };
 
@@ -57,9 +57,10 @@ const Magazines = () => {
     return magazines.map((magazine) => (
       <div key={magazine.id} className="bg-white p-4 shadow-md rounded-lg">
         <div className="flex justify-center">
-        <img src={magazine.img} alt={magazine.title} className="w-1/2 h-[40%] object-contain rounded-lg mb-4" />
+          <img src={magazine.img} alt={magazine.title} className="w-1/2 h-[300px] object-contain rounded-lg mb-4" />
         </div>
         <h3 className="text-xl font-medium">{magazine.title}</h3>
+        <h5 className="text-sm font-medium">{magazine.releaseDate}</h5>
 
         <div className="mt-4 flex gap-2">
           <button className="bg-green-600 text-white px-4 py-2 rounded-lg">
