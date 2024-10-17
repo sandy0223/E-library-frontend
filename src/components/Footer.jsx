@@ -26,7 +26,7 @@ const Footer = () => {
             <Link className='text-black font-bold hover:text-white hover:bg-slate-300 w-[60%] border-2 border-slate-400 bg-slate-50 text-center p-2 mb-2 rounded-full' to="/About">About Us</Link>
           </div>
         </div>
-        <div className="text-9xl text-white mb-4 mt-4 Orbitron shadow-inner shadow-white  p-4"><span className='text-yellow-300'>LEARN</span>TEL</div>
+        <div className="text-9xl text-white mb-4 mt-4 Orbitron   p-4"><span className='text-yellow-300'>LEARN</span>TEL</div>
       </div>
 <div className="flex justify-between w-full">
 <span className='text-white'> <details><summary>&copy; Copyrighted by</summary>
