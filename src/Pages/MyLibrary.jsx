@@ -29,7 +29,7 @@ const MyLibrary = ({ favoriteBooks, favoriteMagazines }) => {
               <img
                 src={book.image}
                 alt={book.title}
-                className="w-full h-64 object-cover mb-4"
+                className="w-full h-64 object-contain mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">{book.title}</h3>
               <p className="text-gray-600 mb-1">by {book.author}</p>
@@ -44,7 +44,7 @@ const MyLibrary = ({ favoriteBooks, favoriteMagazines }) => {
               <img
                 src={magazine.img}
                 alt={magazine.title}
-                className="w-full h-64 object-cover mb-4"
+                className="w-full h-64 object-contain mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">{magazine.title}</h3>
               <p className="text-gray-600 mb-1">{magazine.releaseDate || 'Available Now'}</p>
